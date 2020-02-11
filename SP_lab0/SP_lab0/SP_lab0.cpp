@@ -7,20 +7,29 @@
 
 int main()
 {
-	printf("\nBYTE\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(BYTE), (BYTE)0x0, (BYTE)0x7f);
-	printf("\n\nCHAR\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(CHAR), (CHAR)0x80, (CHAR)0x7f);
-	printf("\n\nBOOLEAN\t\nlength - %d\tMIN value: %hhd\tMAX value: %d", sizeof(BOOLEAN), (BOOLEAN)0x80, (BOOLEAN)0x7f);
+	printf("\n\nchar\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(CHAR), CHAR_MIN, CHAR_MAX);
+	printf("\n\nsigned char\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(CHAR), SCHAR_MIN, SCHAR_MAX);
+	printf("\n\nunsigned char\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(CHAR), 0 , UCHAR_MAX);
+
+
+	printf("\n\nshort\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(SHORT), SHRT_MIN, SHRT_MAX );
+	printf("\n\nunsigned short\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(SHORT), 0, USHRT_MAX);
+
+
+	printf("\n\nint\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(INT), INT_MIN, INT_MAX);
+	printf("\n\nunsigned int\t\nlength - %d\tMIN value: %u\tMAX value: %u", sizeof(UINT), 0, UINT_MAX);
+
+
+	printf("\n\nlong\t\nlength - %d\tMIN value: %li\tMAX value: %li", sizeof(INT), LONG_MIN, LONG_MAX);
+	printf("\n\nunsigned long\t\nlength - %d\tMIN value: %u\tMAX value: %lu", sizeof(UINT), 0, ULONG_MAX);
 	
-	printf("\n\nWORD\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(WORD), 0, (WORD)0xffff);
-	printf("\n\nWCHAR\t\nlength - %d\tMIN value: %hd\tMAX value: %d", sizeof(WCHAR), (WCHAR)0x8000, (WCHAR)0x7fff);
-	printf("\n\nTCHAR\t\nlength - %d\tMIN value: %hd\tMAX value: %d", sizeof(TCHAR), (TCHAR)0x8000, (TCHAR)0x7fff);
-	printf("\n\nSHORT\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(SHORT), (SHORT)0x8000, (SHORT)0x7fff);
 
+	printf("\n\nlong long\t\nlength - %d\tMIN value: %lld\tMAX value: %lld", sizeof(INT), LLONG_MIN, LLONG_MAX);
+	printf("\n\nunsigned long long\t\nlength - %d\tMIN value: %u\tMAX value: %llu", sizeof(UINT), 0, ULLONG_MAX);
+		
 
-	printf("\n\nBOOL\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(BOOL), (BOOL)0x80000000, (BOOL)0x7fffffff);
-	printf("\n\nINT\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(INT), 0x80000000, 0x7fffffff);
-	printf("\n\nUINT\t\nlength - %d\tMIN value: %u\tMAX value: %u", sizeof(UINT), 0, 0xffffffff);
-	printf("\n\nDWORD\t\nlength - %d\tMIN value: %u\tMAX value: %u", sizeof(DWORD), 0, 0xffffffff);
-
+	printf("\nfloat\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(BYTE), FLT_MIN, FLT_MAX);
+	printf("\n\ndouble\t\nlength - %d\tMIN value: %hhd\tMAX value: %d", sizeof(BOOLEAN), DBL_MIN, DBL_MAX);
+	printf("\n\nlong double\t\nlength - %d\tMIN value: %d\tMAX value: %d", sizeof(WORD), LDBL_MIN, LDBL_MAX);
 	return 0;
 }
