@@ -1,2 +1,2 @@
 Я написала программу, которая выводит в консоле простейшие типы данных языка С, их размер в байтах и диапазон значений.
-![Пример](http:\\Users\tanya\OneDrive\Документы\GitHub\SP-course\Пример.png "Пример")
+![Пример](https://raw.githubusercontent.com/Tanya-12/SP_lab0/branch/path/to/Пример.png "Пример")
